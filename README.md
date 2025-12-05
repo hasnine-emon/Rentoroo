@@ -62,6 +62,9 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
   - Buttons allow contacting the agency via **email** or **phone**.
   - The page uses `useParams` from React Router to fetch the specific car by its `id`.
   - The **CarImage.jsx** component shows car images dynamically.
+ 
+    ### Car Details / Booking Page
+![Car Details Page](src/assets/screenshots/car-details.png)
 
 ---
 
