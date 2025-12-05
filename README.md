@@ -1,6 +1,6 @@
 
 
-# Rentoo Web
+# Rentroo Web
 
 Rentoo is a responsive car rental web application built with **React** and **Tailwind CSS**. The platform allows users to explore and book cars across multiple cities, view car details, manage bookings, and contact car agencies. The application also includes an owner dashboard for managing listed cars.
 
@@ -64,7 +64,7 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
   - The **CarImage.jsx** component shows car images dynamically.
  
     ### Car Details / Booking Page
-![Car Details Page](src/assets/screenshots/car-details.png)
+![Car Details Page](https://github.com/hasnine-emon/Rentoroo/blob/main/Screenshot%202025-11-26%20224110.png?raw=true)
 
 ---
 
