@@ -3,7 +3,7 @@ import { assets } from '../assets/data'
 const MyBookings = () => {
   return (
     <div>
-      
+      mybooking
     </div>
   )
 }
