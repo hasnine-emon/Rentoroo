@@ -31,35 +31,33 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
 
 ---
 
-## Folder Structure
+## How Key Pages Are Created
 
-Rentoo/
-├─ public/
-│ └─ index.html
-├─ src/
-│ ├─ assets/
-│ │ └─ data.js, images, icons
-│ ├─ components/
-│ │ ├─ Header.jsx
-│ │ ├─ Footer.jsx
-│ │ ├─ Hero.jsx
-│ │ ├─ Navbar.jsx
-│ │ ├─ FeaturedCar.jsx
-│ │ ├─ Testimonial.jsx
-│ │ └─ Item.jsx
-│ ├─ pages/
-│ │ ├─ Home.jsx
-│ │ ├─ Listing.jsx
-│ │ ├─ CarDetails.jsx
-│ │ ├─ Blog.jsx
-│ │ ├─ Contact.jsx
-│ │ ├─ MyBookings.jsx
-│ │ └─ owner/
-│ │ ├─ Dashboard.jsx
-│ │ ├─ AddCar.jsx
-│ │ └─ ListCar.jsx
-│ ├─ App.jsx
-│ ├─ main.jsx
-│ └─ index.css
-└─ package.json
+### 1. **Home Page**
+- The **Home.jsx** page is built using several reusable components:
+  - **Hero.jsx:** Displays a carousel with search form, date pickers, and destination selection.
+  - **FeaturedCar.jsx:** Uses `Swiper` to showcase top cars, filtered by destination and other criteria.
+  - **Testimonial.jsx:** Displays user reviews with rating stars.
+  - **Blog.jsx:** Shows recent blog posts.
+- **Global state** (ShopContext) is used for shared data like cart items or search states.
+
+### 2. **Car Listing Page**
+- **Listing.jsx** allows users to filter and sort cars:
+  - Filters include **body type** and **price range**.
+  - Sorting options are **Relevance**, **Low to High**, and **High to Low**.
+  - Uses `useMemo` to efficiently filter and sort cars from `dummyCars`.
+  - Search input allows users to search by **city, country, or car title**.
+  - Paginated results are displayed using the **Item.jsx** component for each car.
+
+### 3. **Car Booking / Details Page**
+- **CarDetails.jsx** shows detailed car information:
+  - Displays **images**, **price**, **specs**, **features**, and **agency contact info**.
+  - Users can select **Pick-Up** and **Drop-Off** dates to check availability.
+  - Buttons allow contacting the agency via **email** or **phone**.
+  - The page uses `useParams` from React Router to fetch the specific car by its `id`.
+  - The **CarImage.jsx** component shows car images dynamically.
+
+---
+
+
 
