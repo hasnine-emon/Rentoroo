@@ -41,6 +41,9 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
   - **Blog.jsx:** Shows recent blog posts.
 - **Global state** (ShopContext) is used for shared data like cart items or search states.
 
+  ### Home Page
+![Home Page](src/assets/screenshots/homepage.png)
+
 ### 2. **Car Listing Page**
 - **Listing.jsx** allows users to filter and sort cars:
   - Filters include **body type** and **price range**.
@@ -49,7 +52,9 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
   - Search input allows users to search by **city, country, or car title**.
   - Paginated results are displayed using the **Item.jsx** component for each car.
   - 
-   ![Car Listing] (https://github.com/hasnine-emon/Rentoroo/blob/main/Screenshot%202025-11-26%20120633.png?raw=true)
+
+### Car Listing Page
+![Car Listing Page](src/assets/screenshots/listing.png)  
 ### 3. **Car Booking / Details Page**
 - **CarDetails.jsx** shows detailed car information:
   - Displays **images**, **price**, **specs**, **features**, and **agency contact info**.
