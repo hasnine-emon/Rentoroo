@@ -1,16 +1,65 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Rentoo Web
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Rentoo is a responsive car rental web application built with **React** and **Tailwind CSS**. The platform allows users to explore and book cars across multiple cities, view car details, manage bookings, and contact car agencies. The application also includes an owner dashboard for managing listed cars.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Homepage & Hero Section:** Attractive carousel with "Search & Booking" form for destinations and dates.
+- **Listings Page:** Browse cars with filter options (body type, price range) and sorting functionality.
+- **Car Details Page:** Detailed car information, availability check, and agency contact options.
+- **User Dashboard:**
+  - **My Bookings:** View and manage user bookings.
+  - **Owner Dashboard:** Add, list, and manage cars.
+- **Contact & Blog Pages:** Reach out to Rentoo support and read informational articles.
+- **Testimonials & Featured Cars:** Display customer reviews and top cars with Swiper slider.
+- **Responsive Navbar & Footer:** Navigation, search bar, and social media links.
+- **React Toastify:** Notifications for user actions (e.g., booking, login).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- **Frontend:** React, React Router DOM, Tailwind CSS
+- **State Management:** React Context API
+- **Carousel:** Swiper.js
+- **Icons & Assets:** Custom SVG icons and images
+- **Notifications:** React Toastify
+
+---
+
+## Folder Structure
+
+Rentoo/
+├─ public/
+│ └─ index.html
+├─ src/
+│ ├─ assets/
+│ │ └─ data.js, images, icons
+│ ├─ components/
+│ │ ├─ Header.jsx
+│ │ ├─ Footer.jsx
+│ │ ├─ Hero.jsx
+│ │ ├─ Navbar.jsx
+│ │ ├─ FeaturedCar.jsx
+│ │ ├─ Testimonial.jsx
+│ │ └─ Item.jsx
+│ ├─ pages/
+│ │ ├─ Home.jsx
+│ │ ├─ Listing.jsx
+│ │ ├─ CarDetails.jsx
+│ │ ├─ Blog.jsx
+│ │ ├─ Contact.jsx
+│ │ ├─ MyBookings.jsx
+│ │ └─ owner/
+│ │ ├─ Dashboard.jsx
+│ │ ├─ AddCar.jsx
+│ │ └─ ListCar.jsx
+│ ├─ App.jsx
+│ ├─ main.jsx
+│ └─ index.css
+└─ package.json
+
