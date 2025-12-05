@@ -48,7 +48,8 @@ Rentoo is a responsive car rental web application built with **React** and **Tai
   - Uses `useMemo` to efficiently filter and sort cars from `dummyCars`.
   - Search input allows users to search by **city, country, or car title**.
   - Paginated results are displayed using the **Item.jsx** component for each car.
-
+  - 
+   ![Car Listing] (https://github.com/hasnine-emon/Rentoroo/blob/main/Screenshot%202025-11-26%20120633.png?raw=true)
 ### 3. **Car Booking / Details Page**
 - **CarDetails.jsx** shows detailed car information:
   - Displays **images**, **price**, **specs**, **features**, and **agency contact info**.
